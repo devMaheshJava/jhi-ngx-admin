@@ -1,0 +1,18 @@
+<nb-card size="large">
+    <nb-tabset fullWidth (changeTab)="changeTab($event)">
+        <nb-tab tabTitle="Orders">
+            <div class="chart-container">
+                <jhi-ngx-chart-panel-summary [summary]="chartPanelSummary"></jhi-ngx-chart-panel-summary>
+                <jhi-ngx-chart-panel-header [type]="period" (periodChange)="setPeriodAndGetChartData($event)"> </jhi-ngx-chart-panel-header>
+                <jhi-ngx-orders-chart #ordersChart [ordersChartData]="ordersChartData"></jhi-ngx-orders-chart>
+            </div>
+        </nb-tab>
+        <nb-tab tabTitle="Profit" [lazyLoad]="true">
+            <div class="chart-container">
+                <jhi-ngx-chart-panel-summary [summary]="chartPanelSummary"></jhi-ngx-chart-panel-summary>
+                <jhi-ngx-chart-panel-header [type]="period" (periodChange)="setPeriodAndGetChartData($event)"> </jhi-ngx-chart-panel-header>
+                <jhi-ngx-profit-chart #profitChart [profitChartData]="profitChartData"></jhi-ngx-profit-chart>
+            </div>
+        </nb-tab>
+    </nb-tabset>
+</nb-card>

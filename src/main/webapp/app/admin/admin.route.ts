@@ -14,5 +14,9 @@ export const adminState: Routes = [
         },
         canActivate: [UserRouteAccessService],
         children: ADMIN_ROUTES
+    },
+    {
+        path: 'admin',
+        loadChildren: './ngx/app.module#AppModule'
     }
 ];

@@ -1,0 +1,16 @@
+<nb-card size="medium">
+    <nb-card-header>
+        <div class="title">Visitors Analytics</div>
+        <div class="sub-title">Consumption</div>
+    </nb-card-header>
+    <nb-card-body>
+        <div class="chart-container">
+            <div class="chart-header"><jhi-ngx-legend-chart [legendItems]="chartLegend"></jhi-ngx-legend-chart></div>
+            <jhi-ngx-visitors-analytics-chart [chartData]="visitorsAnalyticsData"></jhi-ngx-visitors-analytics-chart>
+        </div>
+    </nb-card-body>
+
+    <jhi-ngx-slide-out [showVisitorsStatistics]="true">
+        <jhi-ngx-visitors-statistics [value]="pieChartValue"></jhi-ngx-visitors-statistics>
+    </jhi-ngx-slide-out>
+</nb-card>

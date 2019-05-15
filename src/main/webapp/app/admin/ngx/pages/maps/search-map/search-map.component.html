@@ -1,0 +1,7 @@
+<nb-card>
+    <nb-card-header>Google Maps with search</nb-card-header>
+    <nb-card-body>
+        <jhi-ngx-search (positionChanged)="updateLocation($event)"></jhi-ngx-search>
+        <jhi-ngx-map [searchedLocation]="searchedLocation"></jhi-ngx-map>
+    </nb-card-body>
+</nb-card>
