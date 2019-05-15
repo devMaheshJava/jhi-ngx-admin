@@ -5,7 +5,7 @@
     flex-direction: column;
     flex: 1;
 
-    /deep/ nb-card-header {
+    nb-card-header {
         display: flex;
         justify-content: space-between;
 
@@ -19,7 +19,7 @@
         }
     }
 
-    /deep/ nb-card-body {
+    nb-card-body {
         display: flex;
         position: relative;
         flex: 1;

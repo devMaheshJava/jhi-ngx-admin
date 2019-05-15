@@ -1,6 +1,8 @@
 import { Component, OnDestroy } from '@angular/core';
 import { NbMediaBreakpoint, NbMediaBreakpointsService, NbThemeService } from '@nebular/theme';
 import { takeWhile } from 'rxjs/operators';
+import * as echarts from 'echarts';
+
 import { CountryOrderData } from '../../../@core/data/country-order';
 
 @Component({

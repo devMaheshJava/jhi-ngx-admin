@@ -16,7 +16,11 @@ export const adminState: Routes = [
         children: ADMIN_ROUTES
     },
     {
-        path: 'admin',
-        loadChildren: './ngx/app.module#AppModule'
+        path: 'ngx',
+        loadChildren: './ngx/app.module#AppModule',
+        data: {
+            authorities: ['ROLE_ADMIN']
+        },
+        canActivate: [UserRouteAccessService]
     }
 ];

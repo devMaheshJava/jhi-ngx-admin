@@ -1,7 +1,7 @@
 @import '../../../@theme/styles/themes';
 
 @include nb-install-component() {
-    /deep/ .angular-tree-component {
+    .angular-tree-component {
         cursor: default;
 
         .node-wrapper {

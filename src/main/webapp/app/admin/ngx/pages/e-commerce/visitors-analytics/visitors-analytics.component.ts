@@ -1,6 +1,8 @@
 import { Component, OnDestroy } from '@angular/core';
 import { takeWhile } from 'rxjs/operators';
 import { NbThemeService } from '@nebular/theme';
+import * as echarts from 'echarts';
+
 import { OutlineData, VisitorsAnalyticsData } from '../../../@core/data/visitors-analytics';
 import { forkJoin } from 'rxjs';
 

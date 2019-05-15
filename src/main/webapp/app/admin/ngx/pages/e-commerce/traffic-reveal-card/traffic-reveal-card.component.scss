@@ -13,7 +13,7 @@
     }
 
     nb-card-back {
-        /deep/ nb-card-header {
+        nb-card-header {
             border: none;
         }
     }

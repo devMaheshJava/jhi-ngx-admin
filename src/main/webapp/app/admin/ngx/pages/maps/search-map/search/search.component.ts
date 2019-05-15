@@ -1,7 +1,7 @@
 import { Component, ElementRef, EventEmitter, NgZone, OnInit, Output, ViewChild } from '@angular/core';
 import { MapsAPILoader } from '@agm/core';
 import { Location } from '../entity/Location';
-
+import * as google from 'googlemaps';
 @Component({
     selector: 'jhi-search',
     templateUrl: './search.component.html'

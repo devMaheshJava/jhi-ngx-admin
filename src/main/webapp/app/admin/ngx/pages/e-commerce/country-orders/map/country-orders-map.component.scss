@@ -20,16 +20,16 @@
         }
     }
 
-    /deep/ .leaflet-top,
-    /deep/ .leaflet-bottom {
+    .leaflet-top,
+    .leaflet-bottom {
         z-index: 997;
     }
 
-    /deep/ .leaflet-bar {
+    .leaflet-bar {
         box-shadow: none;
     }
 
-    /deep/ .leaflet-control-zoom {
+    .leaflet-control-zoom {
         border: none;
 
         a {
@@ -59,7 +59,7 @@
         }
     }
 
-    /deep/ .leaflet-control-attribution {
+    .leaflet-control-attribution {
         background: transparent;
 
         a {

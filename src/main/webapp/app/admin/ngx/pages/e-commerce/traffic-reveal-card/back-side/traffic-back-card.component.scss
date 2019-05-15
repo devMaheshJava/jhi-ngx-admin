@@ -17,7 +17,7 @@
         position: relative;
     }
 
-    /deep/ canvas {
+    canvas {
         border-bottom-left-radius: nb-theme(card-border-radius);
         border-bottom-right-radius: nb-theme(card-border-radius);
     }

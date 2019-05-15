@@ -4,6 +4,7 @@ import { NbThemeService } from '@nebular/theme';
 import { Electricity, ElectricityChart, ElectricityData } from '../../../@core/data/electricity';
 import { takeWhile } from 'rxjs/operators';
 import { forkJoin } from 'rxjs';
+import * as echarts from 'echarts';
 
 @Component({
     selector: 'jhi-electricity',

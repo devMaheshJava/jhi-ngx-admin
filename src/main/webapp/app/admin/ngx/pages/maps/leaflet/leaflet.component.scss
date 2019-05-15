@@ -5,12 +5,12 @@
         padding: 0;
     }
 
-    /deep/ .leaflet-top,
-    /deep/ .leaflet-bottom {
+    .leaflet-top,
+    .leaflet-bottom {
         z-index: 997;
     }
 
-    /deep/ .leaflet-container {
+    .leaflet-container {
         width: 100%;
         height: nb-theme(card-height-large);
     }
